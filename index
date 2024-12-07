@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Online Sederhana</title>
+    <link rel="stylesheet" href="diah1.css">
+    <style>
+        .stars {
+            cursor: pointer;
+            font-size: 24px;
+            color: gold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Toko Online Sederhana</h1>
+        <nav>
+            <ul>
+                <li><a href="#products">Produk</a></li>
+                <li><a href="#contact">Kontak</a></li>
+                <li><a href="#cart">Keranjang Belanja</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="products">
+            <h2>Produk Kami</h2>
+            <div class="product" data-name="Produk 1" data-price="10000">
+                <h3>Produk casing oppo</h3>
+                <img src="https://tse1.mm.bing.net/th?id=OIP.54XmKKDu0Ftbczq9CrskNwHaHa&pid=Api&P=0&h=220" alt="casing oppo">
+                <p>Deskripsi produk casing lucu </p>
+                <p>Harga: Rp 10.000</p>
+                <div class="rating">
+                    <span>Rating: </span>
+                    <span class="stars" data-rating="5" onclick="setRating(this, 5)">⭐⭐⭐⭐⭐</span>
+                </div>
+                <button class="add-to-cart">Tambah ke Keranjang</button>
+            </div>
+            <div class="product" data-name="Produk 2" data-price="20000">
+                <h3>Produk casing realme</h3>
+                <img src="https://down-id.img.susercontent.com/file/sg-11134201-7qvea-lkdjazsla2tc8b" alt="casing realme">
+                <p>Deskripsi produk casing estetik</p>
+                <p>Harga: Rp 20.000</p>
+                <div class="rating">
+                    <span>Rating: </span>
+                    <span class="stars" data-rating="4" onclick="setRating(this, 5)">⭐⭐⭐⭐</span>
+                </div>
+                <button class="add-to-cart">Tambah ke Keranjang</button>
+            </div>
+            <div class="product" data-name="Produk 3" data-price="30000">
+                <h3>Produk casing iphone</h3>
+                <img src="https://tse2.mm.bing.net/th?id=OIP.v3AgbJuUlw_7-zdCsj_oewHaHa&pid=Api&P=0&h=220" alt="casing iphone">
+                <p>Deskripsi produk casing unik</p>
+                <p>Harga: Rp 30.000</p>
+                <div class="rating">
+                    <span>Rating: </span>
+                    <span class="stars" data-rating="5" onclick="setRating(this, 5)">⭐⭐⭐⭐⭐</span>
+                </div>
+                <button class="add-to-cart">Tambah ke Keranjang</button>
+            </div>
+        </section>
+        <section id="cart">
+            <h2>Keranjang Belanja</h2>
+            <ul id="cart-items"></ul>
+            <p id="total-price">Total: Rp 0</p>
+            <button id="checkout">Checkout</button>
+        </section>
+        <section id="contact">
+            <h2>Kontak Kami</h2>
+            <p>Alamat: Kp.Gelam Timur Rt003/003</p>
+            <p>No. Telepon: 089507578909</p>
+            <p>Email: [diahindriyanii3@gmail.com]</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Toko Online Sederhana</p>
+    </footer>
+    <script src="diah2.js"></script>
+</body>
+</html>
